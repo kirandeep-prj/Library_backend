@@ -80,6 +80,8 @@
  *                 type: string
  *               Category:
  *                 type: string
+ *               Availablecopies:
+ *                 type: integer
  *     responses:
  *       200:
  *         description: Book updated by admin
@@ -113,7 +115,7 @@
 
 /**
  * @swagger
- * /api/books/admin/shared-map:
+ * /api/books/admin/borrowed-map:
  *   get:
  *     summary: View book sharing map (Admin)
  *     tags: [Admin]

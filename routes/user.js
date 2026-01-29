@@ -8,9 +8,6 @@ const restrictTo = require("../middleware/restrictTo");
 const auth = require("../middleware/auth");
 const admin = require("../controllers/admin")
 const { registerSchema, loginSchema } = require("../validators/user.schema");
-// const auth = require("../middleware/auth");
-// const restrictTo = require("../middleware/restrictTo");
-// const admin =require("../controllers/admin");
 
 router.post("/register", validate(registerSchema), user.register);
 router.post("/login", validate(loginSchema), user.login);

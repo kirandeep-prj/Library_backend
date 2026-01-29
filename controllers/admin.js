@@ -70,6 +70,7 @@ exports.updateBookByAdmin = catchAsync(async (req, res, next) => {
   book.title = req.body.title || book.title;
   book.Author = req.body.Author || book.content;
   book.Category = req.body.Category || book.Category;
+  book.Availablecopies = req.body.Availablecopies || book.Availablecopies;
  
 
   await book.save();
